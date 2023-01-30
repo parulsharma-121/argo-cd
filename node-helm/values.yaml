@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   pullPolicy: Always
-  repository: 291503079657.dkr.ecr.us-east-1.amazonaws.com/cicd-framework
+  repository: public.ecr.aws/j0v0n1m8/cicd-framework
   tag: "1.0"
 
 imagePullSecrets: []
