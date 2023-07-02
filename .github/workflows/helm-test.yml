@@ -33,5 +33,5 @@ jobs:
 
       - name: Run unit test
         run: |
-          go mod init ./node-helm
+          go mod init 
           go test -v ./node-helm
