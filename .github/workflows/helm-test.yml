@@ -53,7 +53,7 @@ jobs:
           fi
 
       - name: Run chart-testing (lint)
-        run: ct lint --config .github/ct.yaml --check-version-increment=false --validate-maintainers=false
+        run: ct lint --config ct.yaml --check-version-increment=false --validate-maintainers=false
 
       - name: Create kind cluster
         uses: helm/kind-action@v1.2.0
@@ -64,7 +64,7 @@ jobs:
         if: steps.list-changed.outputs.changed == 'true'
 
       - name: Run chart-testing (install)
-        run: ct install --config .github/ct.yaml
+        run: ct install --config ct.yaml
       
       - name: Run chart-testing (upgrade)
-        run: ct install --upgrade --config .github/ct.yaml
+        run: ct install --upgrade --config ct.yaml
