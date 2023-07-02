@@ -33,5 +33,5 @@ jobs:
 
       - name: Run unit test
         run: |
-          go mod init 
+          go mod init https://github.com/parulsharma-121/argo-cd/
           go test -v ./node-helm
