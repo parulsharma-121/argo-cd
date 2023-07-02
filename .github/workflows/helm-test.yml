@@ -32,4 +32,6 @@ jobs:
         run: helm dependency update ./node-helm
 
       - name: Run unit test
-        run: go test -v ./node-helm
+        run: |
+          go mod init ./node-helm
+          go test -v ./node-helm
